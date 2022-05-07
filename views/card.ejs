@@ -1,0 +1,33 @@
+<% accounts.forEach(function(acc){ %>
+<div class="account-flex">
+<div class="card">
+    <div class="img">M</div>
+    <div class="content">
+        <div class="content-item">
+            <%=acc.email%>
+            <button id="btn-1-<%=acc.id%>" onclick="copy(this.id)"></button>
+        </div>
+        <div class="content-item">
+            <%=acc.password%>
+            <button id="btn-2-<%=acc.id%>" onclick="copy(this.id)"></button>
+        </div>
+        <div class="content-item">
+            <%=acc.freeSpace%>
+        </div>
+    </div>
+</div>
+<div class="account-contents">
+    <% for(let i=0;i<acc.files.length;i++){ %>
+        <div class="acc-flex-item">
+            <div style="color: #FF0000;"><%=i+1%></div>
+            <div><%=acc.files[i]%></div>
+            <div><%=(acc.fileSize[i]*9.37*10**-10).toFixed(2)+" GB"%></div>
+            <div>
+            <button id="<%=acc.fileLinks[i]%>" onclick="copyLink(this.id)"></button>
+            </div>
+        </div>
+    <%}%>
+</div>
+</div>
+
+<%  }) %>

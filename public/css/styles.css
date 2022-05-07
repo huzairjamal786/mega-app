@@ -1,0 +1,81 @@
+body{
+    background-color: #950101;
+}
+
+
+.account-flex{
+    display: flex;
+    flex-direction: column;
+}
+
+.account-contents{
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    width: 550px;
+    background-color: #000000;
+    color: antiquewhite;
+}
+
+.acc-flex-item{
+    display: flex;
+    word-break: break-all;
+}
+
+.acc-flex-item>div{
+    padding: 10px;
+}
+
+.grid-item{
+    display: grid;
+    grid-template-columns: repeat(2,minmax(0,1fr));
+    row-gap: 20px;
+}
+
+.card{
+    display: flex;
+    width: 550px;
+    background-color: #000000;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.img{
+    width: 125px;
+    font-size: 3rem;
+    text-align: center;
+    background-color: #FF0000;
+    color: antiquewhite;
+    padding-top: 35px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight:bolder;
+    
+}
+
+/* .content{
+
+} */
+
+.content-item{
+    display: flex;
+    padding: 10px;
+    color: antiquewhite;
+    width: 400px;
+    justify-content: space-between;
+    font-size: 20px;
+    align-items: center;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.content-item>button{
+    border: 1px;
+    width: 10px;
+    height: 10px;
+    background-color: #950101;
+}
+
+.acc-flex-item>div>button{
+    border: 1px;
+    width: 10px;
+    height: 10px;
+    background-color: #950101;
+}
