@@ -26,9 +26,9 @@ for await (const acc of accounts) {
     child.link((error, link) => {
       if (error) console.error(error);
       acc.fileLinks.push(link);
+      acc.files.push(child.name);
+      acc.fileSize.push(child.size);
     });
-    acc.files.push(child.name);
-    acc.fileSize.push(child.size);
   });
 }
 
